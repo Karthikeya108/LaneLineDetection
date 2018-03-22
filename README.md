@@ -1,17 +1,8 @@
-# **Finding Lane Lines on the Road** 
-
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
----
-
 **Finding Lane Lines on the Road**
 
 The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
-
 
 [//]: # (Image References)
 
@@ -34,7 +25,11 @@ My pipeline consisted of 6 steps:
 
 Modification of draw_lines() function:
 
-
+1. Initialize lists to store the x and y coordinate values from the Hough trasform lines.
+2. For each of the Hough transform lines, compute the slope and use it to group porints as the left lane points and right lane points.
+3. It is important to choose the lines which do not deviate too much from the expected slope. 
+4. For both left and right lane, fit a line using `np.polyfit()` function.
+5. Draw the line on the initial input image with large thinkness (5).
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
@@ -43,14 +38,13 @@ If you'd like to include images to show how the pipeline works, here is how to i
 
 ### 2. Identify potential shortcomings with your current pipeline
 
+Potential shortcoming:
 
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
-
+1. One shortcoming of this model is that it does not consider the history of detected lane lines, and hence might return incorrect values (lane line) when curved lanes are encountered. This means the output is not smooth.
+2. Another shortcoming is that it does not function as expected when the image is too bright or has low contrast.
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+1. Storing the history of predicted lane lines and using the mean of these values as reference to the future predictions would be helpful to avoid anomalies.
+2. Convert the input image to more suitable color space.
 
-Another potential improvement could be to ...
