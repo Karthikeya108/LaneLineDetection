@@ -11,7 +11,7 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-[image1]: (./sample_images/gray.jpg =100x20) "Grayscale"
+[image1]: ./sample_images/gray.jpg "Grayscale"
 [image2]: ./sample_images/gauss.jpg "Gaussian filter"
 [image3]: ./sample_images/canny.jpg "Canny Edge detection"
 [image4]: ./sample_images/roi.jpg "Region of Interest"
@@ -21,7 +21,7 @@ My pipeline consisted of 6 steps:
 
 1. Convert the images to grayscale.
 
-![Grayscale][image1]
+![Grayscale][image1 =100x20]
 2. Apply gaussian filter with kernel size 3, in order to reduce noise.
 ![Gaussian filter][image2]
 3. Apply canny edge detection with low_threshold=50 and high_threshold=150.
