@@ -43,7 +43,7 @@ Modification of draw_lines() function:
 
 Potential shortcoming:
 
-1. One shortcoming of this model is that it does not consider the history of detected lane lines, and hence might return incorrect values (lane line) when curved lanes are encountered. This means the output is not smooth.
+1. One shortcoming of this model is that it does not consider the history of detected lane lines, and hence might return incorrect values (lane line) when steep curved lanes are encountered. This means the output is not smooth.
 2. Another shortcoming is that it does not function as expected when the image is too bright or has low contrast.
 
 ### 3. Suggest possible improvements to your pipeline
