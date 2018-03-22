@@ -14,16 +14,16 @@ The goals / steps of this project are the following:
 My pipeline consisted of 6 steps:
 
 1. Convert the images to grayscale.
-[[image1]: (./sample_images/gray.jpg)]("Grayscale")
+[[!image1]: (./sample_images/gray.jpg)]("Grayscale")
 2. Apply gaussian filter with kernel size 3, in order to reduce noise.
-[image2]: ./sample_images/gauss.jpg "Gaussian filter"
+[!image2]: ./sample_images/gauss.jpg "Gaussian filter"
 3. Apply canny edge detection with low_threshold=50 and high_threshold=150.
-[image3]: ./sample_images/canny.jpg "Canny Edge detection"
+[!image3]: ./sample_images/canny.jpg "Canny Edge detection"
 4. Define the polygon vertices for region of interest and apply masking.
-[image4]: ./sample_images/roi.jpg "Region of Interest"
+[!image4]: ./sample_images/roi.jpg "Region of Interest"
 5. Define the parameters and apply probabilistic hough transform.
 6. Overlay lane lines on the actaul image.
-[image5]: ./sample_images/final.jpg "Output Image"
+[!image5]: ./sample_images/final.jpg "Output Image"
 
 Modification of draw_lines() function:
 
