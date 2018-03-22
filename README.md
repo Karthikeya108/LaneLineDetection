@@ -11,7 +11,7 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-[image1]: ./sample_images/gray.jpg "Grayscale"
+[image1]: (./sample_images/gray.jpg =100x20) "Grayscale"
 [image2]: ./sample_images/gauss.jpg "Gaussian filter"
 [image3]: ./sample_images/canny.jpg "Canny Edge detection"
 [image4]: ./sample_images/roi.jpg "Region of Interest"
