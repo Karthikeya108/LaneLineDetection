@@ -4,9 +4,6 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-[//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
 
 ---
 
@@ -17,11 +14,16 @@ The goals / steps of this project are the following:
 My pipeline consisted of 6 steps:
 
 1. Convert the images to grayscale.
+[image1]: ./sample_images/gray.jpg "Grayscale"
 2. Apply gaussian filter with kernel size 3, in order to reduce noise.
+[image2]: ./sample_images/gauss.jpg "Gaussian filter"
 3. Apply canny edge detection with low_threshold=50 and high_threshold=150.
+[image3]: ./sample_images/canny.jpg "Canny Edge detection"
 4. Define the polygon vertices for region of interest and apply masking.
+[image4]: ./sample_images/roi.jpg "Region of Interest"
 5. Define the parameters and apply probabilistic hough transform.
 6. Overlay lane lines on the actaul image.
+[image5]: ./sample_images/final.jpg "Output Image"
 
 Modification of draw_lines() function:
 
@@ -30,10 +32,6 @@ Modification of draw_lines() function:
 3. It is important to choose the lines which do not deviate too much from the expected slope. 
 4. For both left and right lane, fit a line using `np.polyfit()` function.
 5. Draw the line on the initial input image with large thinkness (5).
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
