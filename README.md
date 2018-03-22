@@ -21,7 +21,7 @@ My pipeline consisted of 6 steps:
 
 1. Convert the images to grayscale.
 
-![Grayscale][image1 =100x20]
+![Grayscale][image1] {:height="24px" width="48px"}
 2. Apply gaussian filter with kernel size 3, in order to reduce noise.
 ![Gaussian filter][image2]
 3. Apply canny edge detection with low_threshold=50 and high_threshold=150.
