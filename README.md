@@ -30,6 +30,8 @@ My pipeline consisted of 6 steps:
 6. Overlay lane lines on the actaul image.
 <img src="./sample_images/final.jpg" height="300" width="450">
 
+Note: One important thing to notice is that, hardcoding the values (x,y) for determining the region of interest and for drawing lane lines on initial image, is not recommeded. Since the model will not scale when images/video of a different resolution is used as intput.
+
 Modification of draw_lines() function:
 
 1. Initialize lists to store the x and y coordinate values from the Hough trasform lines.
